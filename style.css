@@ -1,0 +1,773 @@
+.web-head {
+
+    display: flex;
+    justify-content: center;
+}
+
+.logo-head img {
+
+    height: 50px;
+
+}
+
+.web-head-body {
+
+    height: auto;
+    width: 90%;
+    padding: 20px 0;
+
+
+
+
+
+}
+
+.head-body {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.menu-items {
+
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+
+
+}
+
+.menu-items li {
+
+    margin: 0 15px;
+}
+
+.menu-items li:hover {
+
+    color: blue;
+}
+
+
+.sign-btn {
+
+    background-color: #025E85;
+    color: white;
+    border: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 600px;
+}
+
+.web-head {
+
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+
+}
+
+.hamburger-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Header responsive */
+@media screen and (max-width: 768px) {
+    .head-menu {
+        display: none; 
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%; 
+        background-color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+        flex-direction: column; 
+    }
+
+    .head-menu.active {
+        display: flex; 
+    }
+
+    .menu-items {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .menu-items li {
+        margin: 10px 0; 
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .hamburger-icon {
+        display: block; 
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    .head-body {
+        position: relative; 
+    }
+}
+
+.hero-section {
+
+    background-color: rgb(255, 255, 255);
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.hero-content {
+
+    background-image: url(Images/background.png);
+    background-repeat: no-repeat;
+    width: 90%;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+
+
+
+
+
+}
+
+.hero-content p,
+h1 {
+
+    padding-left: 30px;
+    color: white;
+}
+
+.hero-content h1 {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: 600px;
+}
+
+
+.services-logo {
+
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo-Grid {
+
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+
+}
+
+.logo-image {
+    width: 50%;
+}
+
+
+.logo-items {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.services-logo {
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-Grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    /* Default grid for large screens */
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    width: 80%;
+}
+
+.logo-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50%;
+    /* Adjust image size for large screens */
+}
+
+/* Responsive adjustments for screens below 768px */
+@media (max-width: 768px) {
+    .logo-Grid {
+        grid-template-columns: repeat(3, 1fr);
+        /* 3 items per row */
+        gap: 15px;
+        width: 90%;
+    }
+
+    .logo-image {
+        width: 70%;
+    }
+
+    .logo-name {
+        font-size: 14px;
+    }
+}
+
+/* Responsive adjustments for screens below 480px */
+@media (max-width: 480px) {
+    .logo-Grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 items per row for very small screens */
+        gap: 20px;
+    }
+
+    .logo-image {
+        width: 80%;
+    }
+
+    .logo-name {
+        font-size: 12px;
+    }
+}
+
+
+.advantage-container {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+    align-items: center;
+   
+
+
+
+}
+
+
+
+
+.skill-left{
+
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+
+.advantages-left-content h2{
+
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* ... Responsive for  advantages section ... */
+
+/* Responsive Styles for under 768px */
+@media (max-width: 768px) {
+    .services-logo .logo-Grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
+    }
+
+    .advantage-container {
+        flex-direction: column; 
+        text-align: center;
+        padding: 20px; 
+    }
+
+    .advantages-left-content {
+        margin-bottom: 40px; 
+    }
+
+    .advantages-left-content h2 {
+        font-size: 28px; 
+    }
+
+    .skill-left {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+
+    .skill-point {
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+    .skill-point img{
+        margin-bottom: 10px;
+    }
+    .advantages-right-content img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+.bootcamp-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+
+
+.container-alignment{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 30px;
+    
+}
+
+.bootcamp-container{
+
+background-color: #EBF3FE;
+width: 90%;
+border-radius: 10px;
+padding-bottom: 70px;
+
+
+
+}
+
+
+.card-image{
+
+width: 100%;
+height: 100%;
+
+border-radius: 5px 5px 0px 0px;
+}
+
+
+.bootcamp-card{
+
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 23%;
+    border-radius: 5px;
+}
+
+.card-section{
+
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.bootcamp-container h2{
+
+    padding-left: 25px;
+    margin-top: 30px;
+}
+
+.bootcamp-button{
+
+background-color: transparent;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 8px;
+border-color: blue;
+color: blue;
+margin-top: 10px;
+width: 93%;
+
+
+}
+
+.bootcamp-button:hover{
+
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+/* For tablets (screens up to 768px wide) */
+@media (max-width: 768px) {
+    .container-alignment {
+        justify-content: center; /* Center-align cards */
+    }
+
+    .bootcamp-card {
+        width: 45%; /* Adjust card width for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .bootcamp-button{
+
+        
+        width: 93%;
+
+
+    }
+
+   
+
+
+
+}
+
+/* For mobile devices (screens up to 480px wide) */
+@media (max-width: 480px) {
+    .bootcamp-card {
+        width: 100%; /* Cards take full width on mobile */
+        margin-bottom: 20px;
+    }
+
+    .bootcamp-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .bootcamp-button {
+        width: 93%; /* Buttons also take full width */
+        
+
+   
+}
+}
+
+
+.how-bootcamp-work{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.bootcamp-work-container{
+
+
+width: 90%;
+margin-top: 100px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 10px;
+
+
+}
+
+.work-card{
+
+    width:20%;
+    text-align: center;
+}
+
+.work-card img{
+
+    width: 100%;
+    height: auto;
+}
+
+/* For tablets (screens up to 768px wide) */
+@media (max-width: 768px) {
+    .work-card {
+        width: 45%; /* Two cards per row */
+    }
+}
+
+/* For mobile devices (screens up to 480px wide) */
+@media (max-width: 480px) {
+    .work-card {
+        width: 100%; /* Single column layout */
+    }
+}
+
+
+.FAQ-Section{
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+align-items: center;
+margin-top: 70px;
+
+}
+
+
+.FAQ-container{
+
+    width: 60%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+
+    
+}
+
+.FAQ-Section h2{
+
+    font-size: 35px;
+}
+
+.faq-card{
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-card summary{
+
+    cursor: pointer;
+    background-color: #f9f9f9;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+
+
+
+}
+
+.faq-card summary .icon{
+
+    font-size: 1.5rem;
+    transition: transform0.3s;
+}
+
+.faq-card[open] summary .icon{
+
+    transform: rotate(45deg);
+}
+
+.faq-card .faq-answer{
+
+    padding: 15px;
+    background-color: white;
+    font-size: 1rem;
+    color: #555;
+    border-top: 1px solid #ddd;
+    text-align: left;
+
+}
+
+
+/* Responsive Styles for the bootcamp FAQ Section */
+@media (max-width: 1024px) {
+    .FAQ-container {
+        width: 60%; 
+    }
+    
+    .FAQ-Section h2 {
+        font-size: 30px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .FAQ-container {
+        width: 80%; 
+    }
+    
+    .FAQ-Section h2 {
+        font-size: 28px; 
+    }
+    
+    .faq-card summary {
+        font-size: 1rem; 
+    }
+    
+    .faq-card .faq-answer {
+        font-size: 0.9rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    .FAQ-container {
+        width: 90%; 
+    }
+    
+    .FAQ-Section h2 {
+        font-size: 25px; 
+    }
+    
+    .faq-card summary {
+        font-size: 0.9rem; 
+        padding: 10px; 
+    }
+    
+    .faq-card .faq-answer {
+        font-size: 0.8rem; 
+        padding: 10px; 
+    }
+}
+
+
+.footer-section{
+
+display: flex;   
+justify-content: center;
+background-color: #EBF3FE;
+box-shadow: 0px -4px 10px rgba(0, 0, 0, 0.05);
+margin-top: 70px;
+padding-top: 30px;
+
+}
+
+.footer-container{
+
+    width: 90%;
+    display: flex;
+    justify-content:space-between;
+}
+
+.footer-menu{
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-item{
+
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.footer-item:hover{
+
+    color: blue;
+}
+
+.footer-playstore-logos{
+
+    margin-top: 15px;
+}
+
+.logo-site{
+
+    width: 40%;
+}
+
+.footer-contact{
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.footer-contact img{
+
+    width: 30px;
+    height: auto;
+}
+
+.contact-logo-section{
+
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+
+}
+
+.contact-logo-section strong{
+
+    font-size: 14px;
+    color:#000;
+    margin-top: 0px;
+
+}
+
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+
+    .footer-container {
+        flex-direction: column; 
+        align-items: center;   
+        text-align: center;    
+        width: 100%;          
+    }
+
+    .footer-col {
+        margin-bottom: 20px; 
+        width: 100%;         
+    }
+
+    .logo-site {
+        width: 60%; 
+        margin-bottom: 15px;
+    }
+
+    .footer-contact {
+        justify-content: center; 
+        gap: 5px; 
+    }
+
+    .footer-contact img {
+        width: 24px; 
+    }
+
+    .footer-social-logos img,
+    .footer-playstore-logos img {
+        width: 24px; 
+        margin: 5px; 
+    }
+
+    .footer-playstore-logos {
+        margin-top: 10px;
+    }
+
+    .footer-menu {
+        text-align: center; 
+        padding: 0;
+    }
+
+    .footer-item {
+        margin-bottom: 10px;
+    }
+
+    .footer-item:hover {
+        color: blue;
+    }
+}
